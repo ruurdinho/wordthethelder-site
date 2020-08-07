@@ -65,7 +65,7 @@ class weatherController extends Controller
 
     /* Data ophalen */
     public function getAPI() {
-        $api_url = 'https://api.darksky.net/forecast/d9886212e11a316fd79e9a08815df546/53.143040,5.849060/?lang=nl&units=ca';
+        $api_url = 'https://api.darksky.net/forecast/APIKEY/53.143040,5.849060/?lang=nl&units=ca';
         $forecast = json_decode(file_get_contents($api_url));
         return $forecast;
     }
